@@ -23,6 +23,7 @@ mkdir -p tmp/deps/
 SBCL_HOME="" tmp/sbcl/bin/sbcl --core tmp/sbcl/lib/sbcl/sbcl.core --no-sysinit --no-userinit \
   --eval "(require 'asdf)" \
   --eval "(asdf:initialize-source-registry '(:source-registry (:tree \"${PWD}/tmp/deps\") :IGNORE-INHERITED-CONFIGURATION))" \
+  --eval "(require :sb-bsd-sockets)" \
   --eval "(asdf:load-system :cl-ppcre)" \
   --eval "(asdf:load-system :style-checker)" \
   --eval "(asdf:load-system :docgen)" \

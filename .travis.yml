@@ -1,5 +1,5 @@
 before_install:
-  - wget http://frank.kank.net/travissbcl/microservices/c52333d/$(git rev-parse HEAD)/travissbcl
+  - wget http://frank.kank.net/travissbcl/microservices/992c2e7/$(git rev-parse HEAD)/travissbcl
   - chmod +x travissbcl
 
 script:

@@ -1,5 +1,7 @@
+(require :sb-bsd-sockets)
+
 (defpackage #:microservices-router (:use :common-lisp)
- (:export)
+ (:export #:boot)
  (:documentation
   "The router for the microservices to register with and use."))
 
