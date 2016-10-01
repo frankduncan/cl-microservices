@@ -1,0 +1,6 @@
+before_install:
+  - wget http://frank.kank.net/travissbcl/microservices/c52333d/$(git rev-parse HEAD)/travissbcl
+  - chmod +x travissbcl
+
+script:
+  - ./travissbcl --script bin/travis.lisp
